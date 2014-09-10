@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cyW-5D-zkT">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Seinfeld Quotes-->
+        <scene sceneID="cLM-KT-KNj">
+            <objects>
+                <tableViewController id="mKE-XF-6cs" customClass="QuotesTableViewController" customModule="SeinfeldQuotes" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="89" sectionHeaderHeight="22" sectionFooterHeight="22" id="fGp-IE-t47">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" selectionStyle="none" indentationWidth="10" reuseIdentifier="quoteCell" rowHeight="89" id="EzA-bg-Ptr" customClass="TwoLabelTableViewCell" customModule="SeinfeldQuotes" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EzA-bg-Ptr" id="VT4-E3-Xhc">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote Scene" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5b-lS-RyQ">
+                                            <rect key="frame" x="492" y="33" width="100" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote Content" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hB-Hj-EEG">
+                                            <rect key="frame" x="8" y="8" width="113" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="2hB-Hj-EEG" firstAttribute="top" secondItem="VT4-E3-Xhc" secondAttribute="topMargin" id="Nbc-jz-39f"/>
+                                        <constraint firstItem="2hB-Hj-EEG" firstAttribute="leading" secondItem="VT4-E3-Xhc" secondAttribute="leadingMargin" id="Q15-K4-JGb"/>
+                                        <constraint firstItem="f5b-lS-RyQ" firstAttribute="trailing" secondItem="VT4-E3-Xhc" secondAttribute="trailingMargin" id="VAA-ND-cCh"/>
+                                        <constraint firstItem="f5b-lS-RyQ" firstAttribute="top" secondItem="2hB-Hj-EEG" secondAttribute="bottom" constant="5" id="Xvv-y6-N82"/>
+                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="2hB-Hj-EEG" secondAttribute="trailing" constant="10" id="glW-BF-tjC"/>
+                                        <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="f5b-lS-RyQ" secondAttribute="bottom" constant="10" id="lqd-Mp-U4J"/>
+                                        <constraint firstItem="f5b-lS-RyQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VT4-E3-Xhc" secondAttribute="leadingMargin" constant="10" id="r1y-LC-IXF"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="headerLabel" destination="2hB-Hj-EEG" id="Fke-Et-RjC"/>
+                                    <outlet property="subheadLabel" destination="f5b-lS-RyQ" id="QYt-IK-lKJ"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="mKE-XF-6cs" id="HcN-Jp-gZo"/>
+                            <outlet property="delegate" destination="mKE-XF-6cs" id="OYd-38-Lu5"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Seinfeld Quotes" id="jkb-79-UoU">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="uqd-f4-HwH">
+                            <connections>
+                                <segue destination="9J1-by-CWr" kind="show" id="i7V-jK-Zp8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HFD-hp-ygn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="607" y="-134"/>
+        </scene>
+        <!--Create Quote-->
+        <scene sceneID="OQs-m8-MTd">
+            <objects>
+                <tableViewController id="9J1-by-CWr" customClass="CreateQuoteTableViewController" customModule="SeinfeldQuotes" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="fsX-Ev-0tg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="textInputCell" id="miS-iC-SGl" customClass="TextInputTableViewCell" customModule="SeinfeldQuotes" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="miS-iC-SGl" id="wod-02-nQ8">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Quote Content" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NfU-DD-xhD">
+                                            <rect key="frame" x="14" y="8" width="572" height="27.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="NfU-DD-xhD" secondAttribute="trailing" constant="6" id="FCt-3i-7yq"/>
+                                        <constraint firstItem="NfU-DD-xhD" firstAttribute="leading" secondItem="wod-02-nQ8" secondAttribute="leadingMargin" constant="6" id="U3F-xk-crV"/>
+                                        <constraint firstItem="NfU-DD-xhD" firstAttribute="top" secondItem="wod-02-nQ8" secondAttribute="topMargin" id="bes-Y3-ZNL"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="NfU-DD-xhD" secondAttribute="bottom" id="ffv-6D-DdT"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="textField" destination="NfU-DD-xhD" id="zzM-xy-Evx"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="9J1-by-CWr" id="y1Y-4F-u98"/>
+                            <outlet property="delegate" destination="9J1-by-CWr" id="CvJ-px-A1x"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Create Quote" id="jsB-pA-nc3">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="mbV-PA-MNA">
+                            <connections>
+                                <action selector="onSaveTap:" destination="9J1-by-CWr" id="Gvl-FD-tN1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CHw-mI-y7X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1275" y="-134"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RTM-DV-rXz">
+            <objects>
+                <navigationController id="cyW-5D-zkT" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iwl-85-Ne4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="mKE-XF-6cs" kind="relationship" relationship="rootViewController" id="BAm-rj-CFi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vMK-qg-Le1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-213" y="-134"/>
+        </scene>
+    </scenes>
+</document>

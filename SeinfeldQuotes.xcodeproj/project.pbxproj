@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA0A6E3119C08AC200EDFACA /* TextInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0A6E3019C08AC200EDFACA /* TextInputTableViewCell.swift */; };
+		FA0A6E3319C08E0100EDFACA /* CreateQuoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0A6E3219C08E0100EDFACA /* CreateQuoteTableViewController.swift */; };
+		FA0A6E3619C101A200EDFACA /* QuoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0A6E3519C101A200EDFACA /* QuoteViewModel.swift */; };
+		FAB1510C19BDF2D3009D9CE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1510B19BDF2D3009D9CE1 /* AppDelegate.swift */; };
+		FAB1511119BDF2D3009D9CE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB1510F19BDF2D3009D9CE1 /* Main.storyboard */; };
+		FAB1511319BDF2D3009D9CE1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB1511219BDF2D3009D9CE1 /* Images.xcassets */; };
+		FAB1511F19BDF2D3009D9CE1 /* SeinfeldQuotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1511E19BDF2D3009D9CE1 /* SeinfeldQuotesTests.swift */; };
+		FAB1512B19BDFE7C009D9CE1 /* QuotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1512A19BDFE7C009D9CE1 /* QuotesTableViewController.swift */; };
+		FAB1512D19BF2530009D9CE1 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1512C19BF2530009D9CE1 /* Quote.swift */; };
+		FAB1512F19BF28CD009D9CE1 /* TwoLabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1512E19BF28CD009D9CE1 /* TwoLabelTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAB1511919BDF2D3009D9CE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAB150FE19BDF2D3009D9CE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAB1510519BDF2D3009D9CE1;
+			remoteInfo = SeinfeldQuotes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA0A6E3019C08AC200EDFACA /* TextInputTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputTableViewCell.swift; sourceTree = "<group>"; };
+		FA0A6E3219C08E0100EDFACA /* CreateQuoteTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateQuoteTableViewController.swift; sourceTree = "<group>"; };
+		FA0A6E3519C101A200EDFACA /* QuoteViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteViewModel.swift; sourceTree = "<group>"; };
+		FAB1510619BDF2D3009D9CE1 /* SeinfeldQuotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeinfeldQuotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB1510A19BDF2D3009D9CE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAB1510B19BDF2D3009D9CE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAB1511019BDF2D3009D9CE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAB1511219BDF2D3009D9CE1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FAB1511819BDF2D3009D9CE1 /* SeinfeldQuotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeinfeldQuotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB1511D19BDF2D3009D9CE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAB1511E19BDF2D3009D9CE1 /* SeinfeldQuotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeinfeldQuotesTests.swift; sourceTree = "<group>"; };
+		FAB1512A19BDFE7C009D9CE1 /* QuotesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuotesTableViewController.swift; path = ../QuotesTableViewController.swift; sourceTree = "<group>"; };
+		FAB1512C19BF2530009D9CE1 /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		FAB1512E19BF28CD009D9CE1 /* TwoLabelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoLabelTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAB1510319BDF2D3009D9CE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB1511519BDF2D3009D9CE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA0A6E2D19C08A8600EDFACA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1512E19BF28CD009D9CE1 /* TwoLabelTableViewCell.swift */,
+				FA0A6E3019C08AC200EDFACA /* TextInputTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		FA0A6E2E19C08A9200EDFACA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1512A19BDFE7C009D9CE1 /* QuotesTableViewController.swift */,
+				FA0A6E3219C08E0100EDFACA /* CreateQuoteTableViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FA0A6E2F19C08A9E00EDFACA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1512C19BF2530009D9CE1 /* Quote.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FA0A6E3419C1018200EDFACA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FA0A6E3519C101A200EDFACA /* QuoteViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		FAB150FD19BDF2D3009D9CE1 = {
+			isa = PBXGroup;
+			children = (
+				FAB1510819BDF2D3009D9CE1 /* SeinfeldQuotes */,
+				FAB1511B19BDF2D3009D9CE1 /* SeinfeldQuotesTests */,
+				FAB1510719BDF2D3009D9CE1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAB1510719BDF2D3009D9CE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1510619BDF2D3009D9CE1 /* SeinfeldQuotes.app */,
+				FAB1511819BDF2D3009D9CE1 /* SeinfeldQuotesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAB1510819BDF2D3009D9CE1 /* SeinfeldQuotes */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1510B19BDF2D3009D9CE1 /* AppDelegate.swift */,
+				FAB1510F19BDF2D3009D9CE1 /* Main.storyboard */,
+				FA0A6E2D19C08A8600EDFACA /* Views */,
+				FA0A6E2E19C08A9200EDFACA /* ViewControllers */,
+				FA0A6E3419C1018200EDFACA /* ViewModel */,
+				FA0A6E2F19C08A9E00EDFACA /* Models */,
+				FAB1511219BDF2D3009D9CE1 /* Images.xcassets */,
+				FAB1510919BDF2D3009D9CE1 /* Supporting Files */,
+			);
+			path = SeinfeldQuotes;
+			sourceTree = "<group>";
+		};
+		FAB1510919BDF2D3009D9CE1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1510A19BDF2D3009D9CE1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAB1511B19BDF2D3009D9CE1 /* SeinfeldQuotesTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1511E19BDF2D3009D9CE1 /* SeinfeldQuotesTests.swift */,
+				FAB1511C19BDF2D3009D9CE1 /* Supporting Files */,
+			);
+			path = SeinfeldQuotesTests;
+			sourceTree = "<group>";
+		};
+		FAB1511C19BDF2D3009D9CE1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1511D19BDF2D3009D9CE1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAB1510519BDF2D3009D9CE1 /* SeinfeldQuotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAB1512219BDF2D3009D9CE1 /* Build configuration list for PBXNativeTarget "SeinfeldQuotes" */;
+			buildPhases = (
+				FAB1510219BDF2D3009D9CE1 /* Sources */,
+				FAB1510319BDF2D3009D9CE1 /* Frameworks */,
+				FAB1510419BDF2D3009D9CE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SeinfeldQuotes;
+			productName = SeinfeldQuotes;
+			productReference = FAB1510619BDF2D3009D9CE1 /* SeinfeldQuotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAB1511719BDF2D3009D9CE1 /* SeinfeldQuotesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAB1512519BDF2D3009D9CE1 /* Build configuration list for PBXNativeTarget "SeinfeldQuotesTests" */;
+			buildPhases = (
+				FAB1511419BDF2D3009D9CE1 /* Sources */,
+				FAB1511519BDF2D3009D9CE1 /* Frameworks */,
+				FAB1511619BDF2D3009D9CE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAB1511A19BDF2D3009D9CE1 /* PBXTargetDependency */,
+			);
+			name = SeinfeldQuotesTests;
+			productName = SeinfeldQuotesTests;
+			productReference = FAB1511819BDF2D3009D9CE1 /* SeinfeldQuotesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAB150FE19BDF2D3009D9CE1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = NatashaTheRobot;
+				TargetAttributes = {
+					FAB1510519BDF2D3009D9CE1 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					FAB1511719BDF2D3009D9CE1 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = FAB1510519BDF2D3009D9CE1;
+					};
+				};
+			};
+			buildConfigurationList = FAB1510119BDF2D3009D9CE1 /* Build configuration list for PBXProject "SeinfeldQuotes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAB150FD19BDF2D3009D9CE1;
+			productRefGroup = FAB1510719BDF2D3009D9CE1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAB1510519BDF2D3009D9CE1 /* SeinfeldQuotes */,
+				FAB1511719BDF2D3009D9CE1 /* SeinfeldQuotesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAB1510419BDF2D3009D9CE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB1511119BDF2D3009D9CE1 /* Main.storyboard in Resources */,
+				FAB1511319BDF2D3009D9CE1 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB1511619BDF2D3009D9CE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAB1510219BDF2D3009D9CE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA0A6E3119C08AC200EDFACA /* TextInputTableViewCell.swift in Sources */,
+				FAB1512B19BDFE7C009D9CE1 /* QuotesTableViewController.swift in Sources */,
+				FAB1512D19BF2530009D9CE1 /* Quote.swift in Sources */,
+				FAB1510C19BDF2D3009D9CE1 /* AppDelegate.swift in Sources */,
+				FA0A6E3319C08E0100EDFACA /* CreateQuoteTableViewController.swift in Sources */,
+				FAB1512F19BF28CD009D9CE1 /* TwoLabelTableViewCell.swift in Sources */,
+				FA0A6E3619C101A200EDFACA /* QuoteViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB1511419BDF2D3009D9CE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB1511F19BDF2D3009D9CE1 /* SeinfeldQuotesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAB1511A19BDF2D3009D9CE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAB1510519BDF2D3009D9CE1 /* SeinfeldQuotes */;
+			targetProxy = FAB1511919BDF2D3009D9CE1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAB1510F19BDF2D3009D9CE1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAB1511019BDF2D3009D9CE1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAB1512019BDF2D3009D9CE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAB1512119BDF2D3009D9CE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAB1512319BDF2D3009D9CE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = SeinfeldQuotes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FAB1512419BDF2D3009D9CE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = SeinfeldQuotes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FAB1512619BDF2D3009D9CE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SeinfeldQuotesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeinfeldQuotes.app/SeinfeldQuotes";
+			};
+			name = Debug;
+		};
+		FAB1512719BDF2D3009D9CE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SeinfeldQuotesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeinfeldQuotes.app/SeinfeldQuotes";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAB1510119BDF2D3009D9CE1 /* Build configuration list for PBXProject "SeinfeldQuotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB1512019BDF2D3009D9CE1 /* Debug */,
+				FAB1512119BDF2D3009D9CE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAB1512219BDF2D3009D9CE1 /* Build configuration list for PBXNativeTarget "SeinfeldQuotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB1512319BDF2D3009D9CE1 /* Debug */,
+				FAB1512419BDF2D3009D9CE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAB1512519BDF2D3009D9CE1 /* Build configuration list for PBXNativeTarget "SeinfeldQuotesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB1512619BDF2D3009D9CE1 /* Debug */,
+				FAB1512719BDF2D3009D9CE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAB150FE19BDF2D3009D9CE1 /* Project object */;
+}
