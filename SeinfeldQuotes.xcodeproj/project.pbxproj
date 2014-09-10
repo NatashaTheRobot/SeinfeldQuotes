@@ -10,11 +10,11 @@
 		FA0A6E3119C08AC200EDFACA /* TextInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0A6E3019C08AC200EDFACA /* TextInputTableViewCell.swift */; };
 		FA0A6E3319C08E0100EDFACA /* CreateQuoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0A6E3219C08E0100EDFACA /* CreateQuoteTableViewController.swift */; };
 		FA0A6E3619C101A200EDFACA /* QuoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0A6E3519C101A200EDFACA /* QuoteViewModel.swift */; };
+		FA0A6E3819C1144200EDFACA /* QuotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0A6E3719C1144200EDFACA /* QuotesTableViewController.swift */; };
 		FAB1510C19BDF2D3009D9CE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1510B19BDF2D3009D9CE1 /* AppDelegate.swift */; };
 		FAB1511119BDF2D3009D9CE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB1510F19BDF2D3009D9CE1 /* Main.storyboard */; };
 		FAB1511319BDF2D3009D9CE1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB1511219BDF2D3009D9CE1 /* Images.xcassets */; };
 		FAB1511F19BDF2D3009D9CE1 /* SeinfeldQuotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1511E19BDF2D3009D9CE1 /* SeinfeldQuotesTests.swift */; };
-		FAB1512B19BDFE7C009D9CE1 /* QuotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1512A19BDFE7C009D9CE1 /* QuotesTableViewController.swift */; };
 		FAB1512D19BF2530009D9CE1 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1512C19BF2530009D9CE1 /* Quote.swift */; };
 		FAB1512F19BF28CD009D9CE1 /* TwoLabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1512E19BF28CD009D9CE1 /* TwoLabelTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -33,6 +33,7 @@
 		FA0A6E3019C08AC200EDFACA /* TextInputTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputTableViewCell.swift; sourceTree = "<group>"; };
 		FA0A6E3219C08E0100EDFACA /* CreateQuoteTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateQuoteTableViewController.swift; sourceTree = "<group>"; };
 		FA0A6E3519C101A200EDFACA /* QuoteViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteViewModel.swift; sourceTree = "<group>"; };
+		FA0A6E3719C1144200EDFACA /* QuotesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesTableViewController.swift; sourceTree = "<group>"; };
 		FAB1510619BDF2D3009D9CE1 /* SeinfeldQuotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeinfeldQuotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB1510A19BDF2D3009D9CE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAB1510B19BDF2D3009D9CE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,7 +42,6 @@
 		FAB1511819BDF2D3009D9CE1 /* SeinfeldQuotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeinfeldQuotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB1511D19BDF2D3009D9CE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAB1511E19BDF2D3009D9CE1 /* SeinfeldQuotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeinfeldQuotesTests.swift; sourceTree = "<group>"; };
-		FAB1512A19BDFE7C009D9CE1 /* QuotesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuotesTableViewController.swift; path = ../QuotesTableViewController.swift; sourceTree = "<group>"; };
 		FAB1512C19BF2530009D9CE1 /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		FAB1512E19BF28CD009D9CE1 /* TwoLabelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoLabelTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,7 +76,7 @@
 		FA0A6E2E19C08A9200EDFACA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				FAB1512A19BDFE7C009D9CE1 /* QuotesTableViewController.swift */,
+				FA0A6E3719C1144200EDFACA /* QuotesTableViewController.swift */,
 				FA0A6E3219C08E0100EDFACA /* CreateQuoteTableViewController.swift */,
 			);
 			name = ViewControllers;
@@ -256,7 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA0A6E3119C08AC200EDFACA /* TextInputTableViewCell.swift in Sources */,
-				FAB1512B19BDFE7C009D9CE1 /* QuotesTableViewController.swift in Sources */,
+				FA0A6E3819C1144200EDFACA /* QuotesTableViewController.swift in Sources */,
 				FAB1512D19BF2530009D9CE1 /* Quote.swift in Sources */,
 				FAB1510C19BDF2D3009D9CE1 /* AppDelegate.swift in Sources */,
 				FA0A6E3319C08E0100EDFACA /* CreateQuoteTableViewController.swift in Sources */,

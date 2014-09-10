@@ -15,11 +15,15 @@ class QuotesTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        navigationController?.hidesBarsOnSwipe = true
-        
+                
         tableView.estimatedRowHeight = 89
         tableView.rowHeight = UITableViewAutomaticDimension
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        navigationController?.hidesBarsOnSwipe = true
     }
 
     // MARK: - Table view data source
