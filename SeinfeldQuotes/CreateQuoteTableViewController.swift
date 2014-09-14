@@ -55,12 +55,10 @@ class CreateQuoteTableViewController: UITableViewController {
     // MARK: Actions
     
     @IBAction func onSaveTap(sender: UIBarButtonItem) {
-        switch (quoteViewModel.quoteContent, quoteViewModel.quoteScene) {
-        case let (.Some(quoteContent), .Some(quoteScene)):
-            let quote = Quote(content: quoteContent, scene: quoteScene)
+        if let quote = quoteViewModel.createQuote() {
             // SAVE quote in your data store
             navigationController?.popViewControllerAnimated(true)
-        default:
+        } else {
             let alertController = UIAlertController(title: "All fields required", message: "Please make sure all fields are filled in to add the quote!", preferredStyle: .Alert)
             alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
             presentViewController(alertController, animated: true, completion: nil)
