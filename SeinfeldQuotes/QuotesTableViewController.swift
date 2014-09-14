@@ -10,8 +10,16 @@ import UIKit
 
 class QuotesTableViewController: UITableViewController {
 
-    private let quotes = Quote.allQuotes()
+    private var quotes = Quote.allQuotes()
     private let quoteCellIdentifier = "quoteCell"
+    
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "onQuoteCreatedNotification:",
+            name: NewQuoteCreatedNotification,
+            object: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +34,10 @@ class QuotesTableViewController: UITableViewController {
         navigationController?.hidesBarsOnSwipe = true
     }
 
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+    
     // MARK: - Table view data source
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -41,5 +53,15 @@ class QuotesTableViewController: UITableViewController {
         return cell
 
     }
+    
+    // MARK: Notification Handler
+    
+    func onQuoteCreatedNotification(notification: NSNotification) {
+        if let newQuote = notification.object as? Quote {
+            quotes.insert(newQuote, atIndex: 0)
+            tableView.insertRowsAtIndexPaths([NSIndexPath(forRow: 0, inSection: 0)], withRowAnimation: .Automatic)
+        }
+    }
+    
 
 }

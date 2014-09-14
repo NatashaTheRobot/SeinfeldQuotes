@@ -8,6 +8,8 @@
 
 import UIKit
 
+let NewQuoteCreatedNotification = "NewQuoteCreatedNotification"
+
 class CreateQuoteTableViewController: UITableViewController {
 
     private let quoteViewModel = QuoteViewModel()
@@ -29,7 +31,8 @@ class CreateQuoteTableViewController: UITableViewController {
     
     @IBAction func onSaveTap(sender: UIBarButtonItem) {
         if let quote = quoteViewModel.createQuote() {
-            // SAVE quote in your data store
+            let newQuoteCreatedNotification = NSNotification(name: NewQuoteCreatedNotification, object: quote)
+            NSNotificationCenter.defaultCenter().postNotification(newQuoteCreatedNotification)
             navigationController?.popViewControllerAnimated(true)
         } else {
             let alertController = UIAlertController(title: "All fields required", message: "Please make sure all fields are filled in to add the quote!", preferredStyle: .Alert)
@@ -51,16 +54,20 @@ class CreateQuoteTableViewController: UITableViewController {
             
             switch quoteField {
             case .Content:
-                cell.configure(text: quoteViewModel.quoteContent, placeholder: quoteViewModel.quoteContentPlaceholder, textFieldChangedHandler: {[weak self] (newText) in
-                    if let strongSelf = self {
-                        strongSelf.quoteViewModel.quoteContent = newText
-                    }
+                cell.configure(text: quoteViewModel.quoteContent,
+                    placeholder: quoteViewModel.quoteContentPlaceholder,
+                    textFieldChangedHandler: {[weak self] (newText) in
+                        if let strongSelf = self {
+                            strongSelf.quoteViewModel.quoteContent = newText
+                        }
                 })
             case .Scene:
-                cell.configure(text: quoteViewModel.quoteScene, placeholder: quoteViewModel.quoteScenePlaceholder, textFieldChangedHandler: {[weak self] (newText) in
-                    if let strongSelf = self {
-                        strongSelf.quoteViewModel.quoteScene = newText
-                    }
+                cell.configure(text: quoteViewModel.quoteScene,
+                    placeholder: quoteViewModel.quoteScenePlaceholder,
+                    textFieldChangedHandler: {[weak self] (newText) in
+                        if let strongSelf = self {
+                            strongSelf.quoteViewModel.quoteScene = newText
+                        }
                 })
             }
         }
