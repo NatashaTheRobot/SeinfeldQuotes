@@ -17,33 +17,6 @@ class CreateQuoteTableViewController: UITableViewController {
     
     private enum QuoteField: Int {
         case Content, Scene
-        
-        func placeholder(#quoteViewModel: QuoteViewModel) -> String {
-            switch self {
-            case .Content:
-                return quoteViewModel.quoteContentPlaceholder
-            case .Scene:
-                return quoteViewModel.quoteScenePlaceholder
-            }
-        }
-        
-        func text(#quoteViewModel: QuoteViewModel) -> String? {
-            switch self {
-            case .Content:
-                return quoteViewModel.quoteContent
-            case .Scene:
-                return quoteViewModel.quoteScene
-            }
-        }
-        
-        func updateQuoteWithText(text: String, quoteViewModel: QuoteViewModel) {
-            switch self {
-            case .Content:
-                quoteViewModel.quoteContent = text
-            case .Scene:
-                quoteViewModel.quoteScene = text
-            }
-        }
     }
     
     override func viewDidLoad() {
@@ -76,14 +49,20 @@ class CreateQuoteTableViewController: UITableViewController {
         
         if let quoteField = QuoteField.fromRaw(indexPath.row) {
             
-            let text = quoteField.text(quoteViewModel: quoteViewModel)
-            let placeholder = quoteField.placeholder(quoteViewModel: quoteViewModel)
-            
-            cell.configure(text: text, placeholder: placeholder, textFieldChangedHandler: { [weak self] (newText) in
-                if let strongSelf = self {
-                    quoteField.updateQuoteWithText(newText, quoteViewModel: strongSelf.quoteViewModel)
-                }
-            })
+            switch quoteField {
+            case .Content:
+                cell.configure(text: quoteViewModel.quoteContent, placeholder: quoteViewModel.quoteContentPlaceholder, textFieldChangedHandler: {[weak self] (newText) in
+                    if let strongSelf = self {
+                        strongSelf.quoteViewModel.quoteContent = newText
+                    }
+                })
+            case .Scene:
+                cell.configure(text: quoteViewModel.quoteScene, placeholder: quoteViewModel.quoteScenePlaceholder, textFieldChangedHandler: {[weak self] (newText) in
+                    if let strongSelf = self {
+                        strongSelf.quoteViewModel.quoteScene = newText
+                    }
+                })
+            }
         }
         
         return cell
