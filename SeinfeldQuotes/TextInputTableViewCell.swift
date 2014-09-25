@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TextInputTableViewCell: UITableViewCell, UITextFieldDelegate {
+class TextInputTableViewCell: UITableViewCell {
 
     @IBOutlet weak private var textField: UITextField!
 
@@ -16,7 +16,7 @@ class TextInputTableViewCell: UITableViewCell, UITextFieldDelegate {
     private var textFieldChangedHander: textFieldChangedHandlerType?
     
     override func awakeFromNib() {
-        textField.delegate = self
+        textField.addTarget(self, action: "textFieldValueChanged:", forControlEvents: .EditingChanged)
     }
     
     func configure(#text: String?, placeholder: String, textFieldChangedHandler: textFieldChangedHandlerType?) {
@@ -30,14 +30,9 @@ class TextInputTableViewCell: UITableViewCell, UITextFieldDelegate {
         self.textFieldChangedHander = textFieldChangedHandler
     }
     
-    // MARK: Text Field Delegate
-    
-    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
-        
+    func textFieldValueChanged(sender: UITextField) {
         if let textFieldChangedHandler = textFieldChangedHander {
-            textFieldChangedHandler(textField.text)
+            textFieldChangedHandler(sender.text)
         }
-        
-        return true
     }
 }
