@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C765552488BB43669E9EE695 /* libPods-FeatureTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6276FF9D0CE425E8E6DAB27 /* libPods-FeatureTests.a */; };
 		FA0A6E3119C08AC200EDFACA /* TextInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0A6E3019C08AC200EDFACA /* TextInputTableViewCell.swift */; };
 		FA0A6E3319C08E0100EDFACA /* CreateQuoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0A6E3219C08E0100EDFACA /* CreateQuoteTableViewController.swift */; };
 		FA0A6E3619C101A200EDFACA /* QuoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0A6E3519C101A200EDFACA /* QuoteViewModel.swift */; };
@@ -17,6 +18,9 @@
 		FAB1511F19BDF2D3009D9CE1 /* SeinfeldQuotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1511E19BDF2D3009D9CE1 /* SeinfeldQuotesTests.swift */; };
 		FAB1512D19BF2530009D9CE1 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1512C19BF2530009D9CE1 /* Quote.swift */; };
 		FAB1512F19BF28CD009D9CE1 /* TwoLabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1512E19BF28CD009D9CE1 /* TwoLabelTableViewCell.swift */; };
+		FAFC7D6A19E17E1F0078B488 /* FeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFC7D6919E17E1F0078B488 /* FeatureTests.swift */; };
+		FAFC7D7319E17F1D0078B488 /* AddQuoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFC7D7219E17F1D0078B488 /* AddQuoteTests.swift */; };
+		FAFC7D7919E17F9C0078B488 /* KIF+SwiftExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFC7D7819E17F9C0078B488 /* KIF+SwiftExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,9 +31,25 @@
 			remoteGlobalIDString = FAB1510519BDF2D3009D9CE1;
 			remoteInfo = SeinfeldQuotes;
 		};
+		FAFC7D6B19E17E1F0078B488 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAB150FE19BDF2D3009D9CE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAB1510519BDF2D3009D9CE1;
+			remoteInfo = SeinfeldQuotes;
+		};
+		FAFC7D7019E17E220078B488 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAB150FE19BDF2D3009D9CE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAB1510519BDF2D3009D9CE1;
+			remoteInfo = SeinfeldQuotes;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CD616BCCE4D40B7A2C3B10E /* Pods-FeatureTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeatureTests.xcconfig"; path = "Pods/Pods-FeatureTests.xcconfig"; sourceTree = "<group>"; };
+		C6276FF9D0CE425E8E6DAB27 /* libPods-FeatureTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FeatureTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA0A6E3019C08AC200EDFACA /* TextInputTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputTableViewCell.swift; sourceTree = "<group>"; };
 		FA0A6E3219C08E0100EDFACA /* CreateQuoteTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateQuoteTableViewController.swift; sourceTree = "<group>"; };
 		FA0A6E3519C101A200EDFACA /* QuoteViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteViewModel.swift; sourceTree = "<group>"; };
@@ -44,6 +64,12 @@
 		FAB1511E19BDF2D3009D9CE1 /* SeinfeldQuotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeinfeldQuotesTests.swift; sourceTree = "<group>"; };
 		FAB1512C19BF2530009D9CE1 /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		FAB1512E19BF28CD009D9CE1 /* TwoLabelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoLabelTableViewCell.swift; sourceTree = "<group>"; };
+		FAFC7D6519E17E1F0078B488 /* FeatureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeatureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAFC7D6819E17E1F0078B488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAFC7D6919E17E1F0078B488 /* FeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureTests.swift; sourceTree = "<group>"; };
+		FAFC7D7219E17F1D0078B488 /* AddQuoteTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddQuoteTests.swift; sourceTree = "<group>"; };
+		FAFC7D7419E17F3D0078B488 /* FeatureTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FeatureTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		FAFC7D7819E17F9C0078B488 /* KIF+SwiftExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KIF+SwiftExtension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,9 +87,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FAFC7D6219E17E1F0078B488 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C765552488BB43669E9EE695 /* libPods-FeatureTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB077F1D45364F6493D5EE55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6276FF9D0CE425E8E6DAB27 /* libPods-FeatureTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FA0A6E2D19C08A8600EDFACA /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,7 +145,10 @@
 			children = (
 				FAB1510819BDF2D3009D9CE1 /* SeinfeldQuotes */,
 				FAB1511B19BDF2D3009D9CE1 /* SeinfeldQuotesTests */,
+				FAFC7D6619E17E1F0078B488 /* FeatureTests */,
 				FAB1510719BDF2D3009D9CE1 /* Products */,
+				0CD616BCCE4D40B7A2C3B10E /* Pods-FeatureTests.xcconfig */,
+				EB077F1D45364F6493D5EE55 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +157,7 @@
 			children = (
 				FAB1510619BDF2D3009D9CE1 /* SeinfeldQuotes.app */,
 				FAB1511819BDF2D3009D9CE1 /* SeinfeldQuotesTests.xctest */,
+				FAFC7D6519E17E1F0078B488 /* FeatureTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -156,6 +202,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FAFC7D6619E17E1F0078B488 /* FeatureTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAFC7D6919E17E1F0078B488 /* FeatureTests.swift */,
+				FAFC7D7219E17F1D0078B488 /* AddQuoteTests.swift */,
+				FAFC7D7819E17F9C0078B488 /* KIF+SwiftExtension.swift */,
+				FAFC7D6719E17E1F0078B488 /* Supporting Files */,
+				FAFC7D7419E17F3D0078B488 /* FeatureTests-Bridging-Header.h */,
+			);
+			path = FeatureTests;
+			sourceTree = "<group>";
+		};
+		FAFC7D6719E17E1F0078B488 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAFC7D6819E17E1F0078B488 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -194,6 +260,27 @@
 			productReference = FAB1511819BDF2D3009D9CE1 /* SeinfeldQuotesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		FAFC7D6419E17E1F0078B488 /* FeatureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAFC7D6F19E17E1F0078B488 /* Build configuration list for PBXNativeTarget "FeatureTests" */;
+			buildPhases = (
+				8B0A7B72D4E741E3AB094A26 /* Check Pods Manifest.lock */,
+				FAFC7D6119E17E1F0078B488 /* Sources */,
+				FAFC7D6219E17E1F0078B488 /* Frameworks */,
+				FAFC7D6319E17E1F0078B488 /* Resources */,
+				2A6299C3389043F48AEB94A5 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAFC7D6C19E17E1F0078B488 /* PBXTargetDependency */,
+				FAFC7D7119E17E220078B488 /* PBXTargetDependency */,
+			);
+			name = FeatureTests;
+			productName = FeatureTests;
+			productReference = FAFC7D6519E17E1F0078B488 /* FeatureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -207,6 +294,10 @@
 						CreatedOnToolsVersion = 6.0;
 					};
 					FAB1511719BDF2D3009D9CE1 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = FAB1510519BDF2D3009D9CE1;
+					};
+					FAFC7D6419E17E1F0078B488 = {
 						CreatedOnToolsVersion = 6.0;
 						TestTargetID = FAB1510519BDF2D3009D9CE1;
 					};
@@ -227,6 +318,7 @@
 			targets = (
 				FAB1510519BDF2D3009D9CE1 /* SeinfeldQuotes */,
 				FAB1511719BDF2D3009D9CE1 /* SeinfeldQuotesTests */,
+				FAFC7D6419E17E1F0078B488 /* FeatureTests */,
 			);
 		};
 /* End PBXProject section */
@@ -248,7 +340,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FAFC7D6319E17E1F0078B488 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A6299C3389043F48AEB94A5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-FeatureTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B0A7B72D4E741E3AB094A26 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FAB1510219BDF2D3009D9CE1 /* Sources */ = {
@@ -273,6 +405,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FAFC7D6119E17E1F0078B488 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFC7D7919E17F9C0078B488 /* KIF+SwiftExtension.swift in Sources */,
+				FAFC7D7319E17F1D0078B488 /* AddQuoteTests.swift in Sources */,
+				FAFC7D6A19E17E1F0078B488 /* FeatureTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -280,6 +422,16 @@
 			isa = PBXTargetDependency;
 			target = FAB1510519BDF2D3009D9CE1 /* SeinfeldQuotes */;
 			targetProxy = FAB1511919BDF2D3009D9CE1 /* PBXContainerItemProxy */;
+		};
+		FAFC7D6C19E17E1F0078B488 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAB1510519BDF2D3009D9CE1 /* SeinfeldQuotes */;
+			targetProxy = FAFC7D6B19E17E1F0078B488 /* PBXContainerItemProxy */;
+		};
+		FAFC7D7119E17E220078B488 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAB1510519BDF2D3009D9CE1 /* SeinfeldQuotes */;
+			targetProxy = FAFC7D7019E17E220078B488 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -428,6 +580,47 @@
 			};
 			name = Release;
 		};
+		FAFC7D6D19E17E1F0078B488 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CD616BCCE4D40B7A2C3B10E /* Pods-FeatureTests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FeatureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FeatureTests/FeatureTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeinfeldQuotes.app/SeinfeldQuotes";
+			};
+			name = Debug;
+		};
+		FAFC7D6E19E17E1F0078B488 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CD616BCCE4D40B7A2C3B10E /* Pods-FeatureTests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FeatureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FeatureTests/FeatureTests-Bridging-Header.h";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeinfeldQuotes.app/SeinfeldQuotes";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -454,6 +647,15 @@
 			buildConfigurations = (
 				FAB1512619BDF2D3009D9CE1 /* Debug */,
 				FAB1512719BDF2D3009D9CE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAFC7D6F19E17E1F0078B488 /* Build configuration list for PBXNativeTarget "FeatureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFC7D6D19E17E1F0078B488 /* Debug */,
+				FAFC7D6E19E17E1F0078B488 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

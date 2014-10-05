@@ -34,6 +34,20 @@
                ReferencedContainer = "container:SeinfeldQuotes.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "FAFC7D6419E17E1F0078B488"
+               BuildableName = "FeatureTests.xctest"
+               BlueprintName = "FeatureTests"
+               ReferencedContainer = "container:SeinfeldQuotes.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -49,6 +63,16 @@
                BlueprintIdentifier = "FAB1511719BDF2D3009D9CE1"
                BuildableName = "SeinfeldQuotesTests.xctest"
                BlueprintName = "SeinfeldQuotesTests"
+               ReferencedContainer = "container:SeinfeldQuotes.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "FAFC7D6419E17E1F0078B488"
+               BuildableName = "FeatureTests.xctest"
+               BlueprintName = "FeatureTests"
                ReferencedContainer = "container:SeinfeldQuotes.xcodeproj">
             </BuildableReference>
          </TestableReference>
