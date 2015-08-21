@@ -45,7 +45,7 @@ class QuotesTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(quoteCellIdentifier) as TwoLabelTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(quoteCellIdentifier) as! TwoLabelTableViewCell
         
         let quote = quotes[indexPath.row]
         cell.configure(headerText: quote.content, subheadText: quote.scene)

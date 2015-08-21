@@ -48,7 +48,7 @@ class CreateQuoteTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(textCellIdentifier) as TextInputTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(textCellIdentifier) as! TextInputTableViewCell
         
         if let quoteField = QuoteField(rawValue: indexPath.row) {
             
