@@ -16,7 +16,7 @@ class QuoteViewModel {
     
     init(quoteContent: String? = nil, quoteScene: String? = nil) {
         self.quoteContent = quoteContent
-        self.quoteContent = quoteScene
+        self.quoteScene = quoteScene
     }
     
     func createQuote() -> Quote? {
